@@ -1,0 +1,2 @@
+class DatabaseItemNotFound(Exception):
+    pass

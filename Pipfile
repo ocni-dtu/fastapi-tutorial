@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = {extras = ["all"], version = "0.92.0"}
+uvicorn = {extras = ["standard"], version = "0.20.0"}
+tenacity = "*"
+bunnet = "*"
+anyio = "*"
+
+[dev-packages]
+pydevd-pycharm = "==222.4459.20"
+black = ">=23.1.0"
+isort = ">=5.12.0"
+docker = "*"
+mixer = "*"
+pytest = "*"
+pytest-env = "*"
+pytest-datafixtures = "*"
+pytest-mock = "*"
+
+[requires]
+python_version = "3.11"
