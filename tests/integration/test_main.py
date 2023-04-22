@@ -1,7 +1,4 @@
-from fastapi.testclient import TestClient
-
-
-def test_docs(client: TestClient):
+def test_docs(client):
     response = client.get(f"/docs")
 
     assert response.status_code == 200

@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      SERVER_NAME: "FastAPI Tutorial"
+      SERVER_HOST: "http://localhost:8000"
+      DATABASE_HOST: "database"
+      DATABASE_USER: "admin"
+      DATABASE_PASSWORD: "mypassword"
+  database:
+    image: "mongo:6"
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "admin"
+      MONGO_INITDB_ROOT_PASSWORD: "mypassword"

@@ -1,7 +1,7 @@
 from uuid import UUID, uuid4
 
 from bunnet import Document
-from pydantic import BaseModel, Field, root_validator
+from pydantic import BaseModel, Field
 
 
 class UpdateBuilding(BaseModel):

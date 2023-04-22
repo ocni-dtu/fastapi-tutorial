@@ -15,11 +15,8 @@ pydevd-pycharm = "==222.4459.20"
 black = ">=23.1.0"
 isort = ">=5.12.0"
 docker = "*"
-mixer = "*"
 pytest = "*"
 pytest-env = "*"
-pytest-datafixtures = "*"
-pytest-mock = "*"
 
 [requires]
 python_version = "3.11"

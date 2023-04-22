@@ -42,7 +42,7 @@ def database(mongodb):
 
 
 @pytest.fixture
-def client(database) -> Generator:
+def client(database) -> TestClient:
     from main import app
 
     with TestClient(app=app, base_url=settings.SERVER_HOST) as _client:

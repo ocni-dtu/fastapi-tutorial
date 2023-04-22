@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
 import models
-from exceptions import DatabaseItemNotFound
+from core.exceptions import DatabaseItemNotFound
 
 router = APIRouter(prefix="/buildings")
 
